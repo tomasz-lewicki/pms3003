@@ -28,7 +28,7 @@ bool Pms3003::measure()
 	 */
 	
 	this->checksum=0;
-	byte buffer[32];
+	byte buffer[24];
 	uint8_t attempts = 0;
 	
 	//if there was no start byte after 100 attempts, return false (fail)
